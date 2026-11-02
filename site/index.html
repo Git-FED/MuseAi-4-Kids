@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Muse 4 Kids — a parent-held family experience with kid profiles and a moderated family chat.">
+  <title>Muse 4 Kids</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title">
+    <div class="age-card">
+      <p class="eyebrow">Muse 4 Kids</p>
+      <h1 id="age-title">Parent or guardian check</h1>
+      <p>This site includes subscription and support options intended for a parent or guardian. Please confirm that you are 18 or older before continuing.</p>
+      <div class="age-actions">
+        <button class="button button-primary" id="age-confirm">I’m 18 or older</button>
+        <a class="button button-muted" href="./not-available.html">I’m under 18</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Muse 4 Kids home"><span class="brand-mark">M</span><span>Muse 4 Kids</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#family-chat">Family chat</a>
+      <a href="./support.html">Support</a>
+    </nav>
+  </header>
+
+  <div class="ticker" aria-label="Muse 4 Kids highlights"><div class="ticker-track"><span>Parent-held accounts</span><span>Kid profiles</span><span>Muse-moderated family chat</span><span>PG by design</span><span>Parent-held accounts</span><span>Kid profiles</span><span>Muse-moderated family chat</span><span>PG by design</span></div></div>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">FED-EDU * 4 KIDS</p>
+        <h1>Big imagination.<br><em>Family-safe</em> connection.</h1>
+        <p class="lede">Muse 4 Kids gives families a simple home base: the parent holds the account, kids join through profiles, and the optional family chat is moderated by Muse.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#family-chat">Explore family chat</a><a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-art"><span class="hero-sparkle sparkle-one" aria-hidden="true">✦</span><span class="hero-sparkle sparkle-two" aria-hidden="true">✦</span><span class="hero-sparkle sparkle-three" aria-hidden="true">✦</span><img src="./assets/promo-family-chat.svg" alt="Illustration of a parent and child sharing a colorful conversation bubble"></div>
+    </section>
+
+    <section class="section-shell three-up" id="how-it-works">
+      <article class="info-card"><span class="number">01</span><h2>Parent account</h2><p>The parent is the account holder and keeps the family controls in one place.</p></article>
+      <article class="info-card"><span class="number">02</span><h2>Kid profiles</h2><p>Each child participates through a profile inside the parent account.</p></article>
+      <article class="info-card"><span class="number">03</span><h2>Muse moderates</h2><p>The paid family chat is designed as a PG version of the relay already in use.</p></article>
+    </section>
+
+    <section class="section-shell promo-grid" aria-label="Muse 4 Kids highlights">
+      <figure><img src="./assets/promo-parent-account.svg" alt="Comic illustration saying Parent in charge"><figcaption>Parent-held and easy to understand.</figcaption></figure>
+      <figure><img src="./assets/promo-muse-moderates.svg" alt="Comic illustration of Muse keeping a chat kind"><figcaption>Muse helps keep the family chat kind.</figcaption></figure>
+    </section>
+
+    <section class="chat-panel section-shell" id="family-chat">
+      <div><p class="eyebrow">Optional paid feature</p><h2>A calmer family chat, with Muse in the middle.</h2><p>Turn on a moderated family chat for your household. External messaging integrations such as WhatsApp and SMS are not advertised as available here.</p></div>
+      <div class="chat-bubbles" aria-label="Example moderated conversation"><div class="bubble bubble-parent">Can we plan a family game night?</div><div class="bubble bubble-muse">Muse: Great idea. Keep it kind, inclusive, and fun.</div><div class="bubble bubble-kid">I vote for the silly drawing game!</div></div>
+    </section>
+
+    <section class="section-shell payment-section" id="support">
+      <div class="section-heading"><p class="eyebrow">Parent / guardian checkout</p><h2>Choose a way to support the next step.</h2><p>Payment controls remain behind the age gate. Replace or remove provider cards after final billing approval.</p></div>
+      <div class="payment-grid">
+        <article class="payment-card"><h3>Family chat subscription</h3><p>PayPal subscription checkout.</p><div id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y"></div><script src="https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script><script>paypal.Buttons({style:{shape:'rect',color:'gold',layout:'vertical',label:'subscribe'},createSubscription:function(data,actions){return actions.subscription.create({plan_id:'P-4FD24238VX4902214NK2XP2Y',quantity:1});},onApprove:function(data){window.location.href='./payment-success.html?provider=paypal&subscription='+encodeURIComponent(data.subscriptionID);},onError:function(){window.location.href='./payment-cancelled.html?provider=paypal';}}).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y');</script></article>
+        <article class="payment-card"><h3>Card checkout</h3><p>Stripe buy button supplied for Fedpromptly.</p><script async src="https://js.stripe.com/v3/buy-button.js"></script><stripe-buy-button buy-button-id="buy_btn_1UJKaaJaRf233kfWKZ81fcIe" publishable-key="pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8"></stripe-buy-button></article>
+        <article class="payment-card"><h3>Other support options</h3><p>These links open an HTML destination and are not part of the Muse 4 Kids launch promise.</p><a class="button button-outline" href="./support.html#other-options">View support options</a></article>
+      </div>
+    </section>
+
+    <section class="discord-wrap section-shell"><div class="discord-card"><p class="eyebrow">Community space</p><h2>Keep the public conversation welcoming.</h2><p>Visit the centered Discord page for the approved widget and server buttons.</p><a class="button button-outline" href="./discord.html">Open Discord servers</a></div></section>
+  </main>
+  <footer class="site-footer"><span>© Muse 4 Kids</span><span><a href="./support.html">Support</a> · <a href="./not-available.html">Availability</a></span></footer>
+  <script src="./app.js"></script>
+
+<footer class="invite-footer">
+  <div class="invite-footer-inner">
+    <p class="invite-footer-title">More ways to explore AI</p>
+    <div class="invite-grid">
+      <section class="invite-card">
+        <h2>Muse</h2>
+        <p>Check out Muse, your personal AI agent. Redeem my code in Settings within 48 hours of joining and we’ll both get 1 billion Muse tokens.</p>
+        <p><strong>Code:</strong> <code>5F2V31</code></p>
+        <a href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Join Muse</a>
+      </section>
+      <section class="invite-card">
+        <h2>Manus AI</h2>
+        <p><strong>Invite code:</strong> <code>G3ADN</code></p>
+      </section>
+      <section class="invite-card">
+        <h2>Teamily</h2>
+        <p>Join me on Teamily, the human-agent platform, where you and always-on agents get work done together in one unified and context-aware space.</p>
+        <p>Redeem my code in Settings → Credits Center and you’ll get 5 CREDITS right away.</p>
+        <p><strong>Code:</strong> <code>2U6Q8D</code></p>
+        <a href="https://teamily.ai/i/2U6Q8D" target="_blank" rel="noopener noreferrer">Join Teamily</a>
+      </section>
+      <section class="invite-card">
+        <h2>Muse · second account</h2>
+        <p>Check out Muse, your personal AI agent. Redeem my code in Settings within 48 hours of joining and we’ll both get 1 billion Muse tokens.</p>
+        <p><strong>Code:</strong> <code>0A0K7R</code></p>
+        <a href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Join Muse</a>
+      </section>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

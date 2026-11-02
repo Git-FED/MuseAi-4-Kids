@@ -1,0 +1,52 @@
+project:
+  name: Muse 4 Kids
+  workstream: FED-EDU * 4 KIDS
+  status: documentation-starter-pack
+  source: locked project notes from chat
+
+locked_decisions:
+  account_holder: parent
+  child_representation: kid_profile_inside_parent_account
+  paid_upsell: family_chat_with_muse_moderation
+  chat_positioning: PG_version_of_existing_relay
+  external_integrations: test_later_not_advertised
+  repository_and_image_name: Muse 4 Kids
+
+included_files:
+  - README.md
+  - docs/locked-notes.md
+  - docs/roadmap.md
+  - product/product-brief.md
+  - product/requirements.md
+  - data/data-model.md
+  - policy/moderation-and-safety.md
+  - docs/site-upgrade.md
+  - site/index.html
+  - site/styles.css
+  - site/app.js
+  - site/assets/favicon.svg
+  - site/assets/promo-family-chat.svg
+  - site/assets/promo-parent-account.svg
+  - site/assets/promo-muse-moderates.svg
+  - site/payment-success.html
+  - site/payment-cancelled.html
+  - site/support.html
+  - site/not-available.html
+  - site/404.html
+  - site/discord.html
+  - site/_headers
+  - site/_redirects
+  - assets/demo/homepage-age-gate.png
+  - assets/demo/discord-servers.png
+  - assets/demo/site-tour.gif
+  - project-manifest.yaml
+
+open_decisions:
+  - pricing_and_billing
+  - age_bands_and_parental_consent
+  - exact_pg_policy
+  - moderation_failure_behavior
+  - human_escalation
+  - retention_and_deletion
+  - regional_launch_requirements
+  - external_integration_scope
