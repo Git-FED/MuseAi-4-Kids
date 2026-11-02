@@ -2,6 +2,7 @@
 
 ## 2026-11-02
 
+- Changed the 18+ Discord flow: after age confirmation, the page asks the visitor to email `museai@fedpromptly.com` for the invite instead of opening or redirecting to the invite link.
 - Replaced the letter-based favicon with an abstract Muse spark-and-chat mark.
 - Added animated hero background morphing and sparkle accents while preserving reduced-motion behavior.
 - Reworked `README.md` into a project landing page with a truthful quick start, scope, deployment status, file map, screenshots, and real local demo GIF.

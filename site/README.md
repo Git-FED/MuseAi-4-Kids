@@ -6,7 +6,7 @@ This directory is a static HTML prototype for GitHub Pages or Cloudflare Pages/W
 
 - `index.html` with a parent/guardian age gate, animated looping ticker, responsive layout, favicon, promotional illustration, centered community section, and payment cards.
 - `payment-success.html`, `payment-cancelled.html`, `support.html`, and `not-available.html` so buttons and routes land on HTML pages.
-- `discord.html` with the centered Discord widget, server buttons, animated title, and an age gate for the 18+ destination.
+- `discord.html` with the centered Discord widget, server buttons, animated title, and an age gate for the 18+ destination. After confirmation, it asks the visitor to email `museai@fedpromptly.com`; it does not redirect directly to the invite.
 - `styles.css` with responsive styling and lightweight animations.
 - `app.js` with a session-only age-gate confirmation.
 - `assets/favicon.svg` is an abstract spark-and-chat mark rather than a letter; `assets/promo-family-chat.svg` is a simple original SVG promotional asset.
