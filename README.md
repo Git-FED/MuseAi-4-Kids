@@ -1,5 +1,7 @@
 # Muse 4 Kids static site prototype
 
+https://github.com/user-attachments/assets/4df46cfb-d894-41f7-a5e3-ab1db669ba73
+
 This directory is a static HTML prototype for GitHub Pages or Cloudflare Pages/Workers static hosting.
 
 ## Included
